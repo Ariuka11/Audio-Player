@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import AudioPlayer from "../components/AudioPlayer";
+import Header from "../components/Header";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <Header />
         <AudioPlayer />
       </main>
     </div>
